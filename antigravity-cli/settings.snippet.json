@@ -1,0 +1,7 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "python C:/Users/hjc/.gemini/antigravity-cli/scratch/statusline.py",
+    "enabled": true
+  }
+}
