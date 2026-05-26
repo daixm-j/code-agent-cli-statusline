@@ -1,6 +1,6 @@
 {
   "statusLine": {
     "type": "command",
-    "command": "pwsh -NoProfile -NonInteractive -File C:/Users/hjc/.claude/statusline-diamond.ps1"
+    "command": "python3 ~/.claude/statusline-diamond.py"
   }
 }
