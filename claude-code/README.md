@@ -55,7 +55,7 @@ Segments (in order):
    {
      "statusLine": {
        "type": "command",
-       "command": "pwsh -NoProfile -NonInteractive -File C:/Users/hjc/.claude/statusline-diamond.ps1"
+       "command": "pwsh -NoProfile -NonInteractive -File ~/.claude/statusline-diamond.ps1"
      }
    }
    ```

@@ -29,17 +29,18 @@ Segments (in order):
 ## Installation
 
 1. Copy `statusline.py` into your Antigravity CLI scratch directory:
-   - Target Directory: `C:\Users\hjc\.gemini\antigravity-cli\scratch\`
-2. Add/merge the statusline configuration snippet into your Antigravity CLI settings file (`C:\Users\hjc\.gemini\antigravity-cli\settings.json`):
+   - Target Directory: `~/.gemini/antigravity-cli/scratch/` (or `%USERPROFILE%\.gemini\antigravity-cli\scratch\` on Windows)
+2. Add/merge the statusline configuration snippet into your Antigravity CLI settings file (`~/.gemini/antigravity-cli/settings.json`):
    ```json
    {
      "statusLine": {
        "type": "command",
-       "command": "python C:/Users/hjc/.gemini/antigravity-cli/scratch/statusline.py",
+       "command": "python ~/.gemini/antigravity-cli/scratch/statusline.py",
        "enabled": true
      }
    }
    ```
+   *Note: On Linux/macOS, you may need to use `python3` instead of `python` in the command, or add a shebang line (`#!/usr/bin/env python3`) to the script, run `chmod +x statusline.py`, and configure the command as `~/.gemini/antigravity-cli/scratch/statusline.py` directly.*
 3. Restart the Antigravity CLI or start a new session.
 
 ---

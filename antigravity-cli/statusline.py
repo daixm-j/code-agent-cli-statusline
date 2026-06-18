@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sys
 import os
 import json
@@ -63,7 +64,10 @@ def main():
         
         # Write to latest_stdin.json to inspect fields
         try:
-            with open(r"C:\Users\hjc\.gemini\antigravity-cli\scratch\latest_stdin.json", "wb") as f:
+            home_dir = os.path.expanduser("~")
+            scratch_file = os.path.join(home_dir, ".gemini", "antigravity-cli", "scratch", "latest_stdin.json")
+            os.makedirs(os.path.dirname(scratch_file), exist_ok=True)
+            with open(scratch_file, "wb") as f:
                 f.write(raw_data)
         except Exception:
             pass
